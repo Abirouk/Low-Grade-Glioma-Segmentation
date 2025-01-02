@@ -47,3 +47,47 @@ This dataset is a table of 110 rows and 18 columns. Each row represents a patien
   <br>
   <em>Figure 5 - The final dataframe to be used in the visualization and modeling part</em>
 </p>
+
+## D. visualization
+
+The visualization part takes place in two stages. The first state involves displaying in distribution in different ways. The second stage involves the visualization of Brain MRI Images in different ways.
+
+### D.1 Distribution
+
+<p align="center">
+  <img src="https://github.com/Abirouk/Low-Grade-Glioma-Segmentation/blob/main/Pictures/Distribution%20of%20data%20grouped%20by%20diagnosis.png?raw=true">
+  <br>
+  <em>Figure 6 - Distribution of data grouped by diagnosis</em>
+</p>
+
+This data shows the distribution of images grouped by diagnosis. The data is split into two groups, “positive” and “negative”. The “positive” group contains 2256 images, which represents 65.05% of the total images. The “negative” group contains 1373 images, which represents 34.95% of the total images. In total, there are 3929 images in the dataset. 
+
+<p align="center">
+  <img src="https://github.com/Abirouk/Low-Grade-Glioma-Segmentation/blob/main/Pictures/Distribution%20of%20data%20grouped%20by%20patient%20and%20diagnosis.png?raw=true">
+  <br>
+  <em>Figure 7 - Distribution of data grouped by patient and diagnosis</em>
+</p>
+
+Both distributions indicate that there are more positive images than negative images, which could have implications for the performance of any deep learning models trained on this data. For example, if the majority of the data is positive, the model may be more likely to predict a positive diagnosis even when the image is actually negative. Therefore, data augmentation does with these distributions when analyzing or interpreting the results of any deep learning models trained on this data.
+
+### D.2 Visualization of Brain MRI Images
+
+Original color and the hot color map  used in the visualization of brain MRI images. The main reason why this colormap is important is that it can effectively highlight different tissue types in the brain based on their MRI intensities. The hot color maps low-intensity values to dark colors (black) and high-intensity values to bright colors (red, yellow, and white). This helps to distinguish different structures in the brain such as grey matter, white matter, and cerebrospinal fluid. 
+
+Additionally, the hot colormap is also useful in differentiating between healthy and abnormal tissue, such as tumors. Tumors often have different intensity values compared to the surrounding healthy tissue and using a colormap like hot can help to highlight these differences and make them more visible. This can be helpful for radiologists and physicians when analyzing the images and can be useful in determining the diagnosis and treatment of the patient. 
+
+It is important to note that the choice of colormap is not only important for visualizing the data but also for the analysis of the data, for example in brain tumor segmentation tasks, the choice of colormap will be important to define the threshold values for the segmentation algorithm.
+
+<p align="center">
+  <img src="https://github.com/Abirouk/Low-Grade-Glioma-Segmentation/blob/main/Pictures/Low%20Grade%20Glioma%20Detection%20on%20Brain%20MRI%20Images%20with%20original%20color%20and%20hot%20colormap.png?raw=true">
+  <br>
+  <em>Figure 8 - Low Grade Glioma Detection on Brain MRI Images wit original color and hot colormap</em>
+</p>
+
+This diagram shows the representation of different images, positive and negative, under two different color scales. (Original color and hot colormap) Positive images using a hot colormap show where the tumor is more black or more white.
+
+<p align="center">
+  <img src="https://github.com/Abirouk/Low-Grade-Glioma-Segmentation/blob/main/Pictures/Tumor%20location%20is%20show%20as%20segmented%20on%20one%20Brain%20MRI.png?raw=true">
+  <br>
+  <em>Figure 9 - Tumor location as segmented on a Brain MRI image</em>
+</p>
