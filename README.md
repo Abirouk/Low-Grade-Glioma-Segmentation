@@ -1,4 +1,34 @@
-# Low-Grade-Glioma-Segmentation
+## Table of Contents
+
+- [Low-Grade-Glioma-Segmentation](#low-grade-glioma-segmentation)
+  - [Table of Contents](#table-of-contents)
+  - [A. Business Understanding](#a-business-understanding)
+    - [A.1 What is the low-grade glioma?](#a1-what-is-the-low-grade-glioma)
+    - [Why deep learning should be used?](#why-deep-learning-should-be-used)
+  - [B. Data Understanding](#b-data-understanding)
+  - [C. Data Preparation](#c-data-preparation)
+  - [D. visualization](#d-visualization)
+    - [D.1 Distribution](#d1-distribution)
+    - [D.2 Visualization of Brain MRI Images](#d2-visualization-of-brain-mri-images)
+  - [E. Data Augmentation](#e-data-augmentation)
+  - [F. Modeling](#f-modeling)
+    - [F.1 Model Information and Decision](#f1-model-information-and-decision)
+    - [F.2 Hardware and Software Requirements](#f2-hardware-and-software-requirements)
+    - [F.3 Building Vanilla U-Net Architecture](#f3-building-vanilla-u-net-architecture)
+    - [F.4 Building Feature Pyramid Network(FPN) Architecture](#f4-building-feature-pyramid-networkfpn-architecture)
+    - [F.5 Building U-Net with ResNeXt Backbone Architecture](#f5-building-u-net-with-resnext-backbone-architecture)
+    - [F.6 Segmentation Quality Metric](#f6-segmentation-quality-metric)
+    - [F.7 Segmentation Loss](#f7-segmentation-loss)
+  - [G. Evaluation](#g-evaluation)
+    - [G.1 Evaluation of the Model Architectures on Training and Validation Data](#g1-evaluation-of-the-model-architectures-on-training-and-validation-data)
+    - [G.2 Evaluation of the Model Architectures on Test Data](#g2-evaluation-of-the-model-architectures-on-test-data)
+    - [G.3 Evaluation of the Random Test Sample](#g3-evaluation-of-the-random-test-sample)
+    - [G.4 Evaluation of the Prediction and Ground Truth Masks on the Brain MRI Images](#g4-evaluation-of-the-prediction-and-ground-truth-masks-on-the-brain-mri-images)
+  - [H. References](#h-references)
+    - [H.1 Websites](#h1-websites)
+    - [H.2 Blog posts - Slides](#h2-blog-posts---slides)
+    - [H.3 Articles](#h3-articles)
+
 
 ## A. Business Understanding
 
